@@ -7,10 +7,11 @@ public class HelloWorld {
         Scanner in = new Scanner(System.in);
 
         System.out.println("Hello again, World!");
-        System.out.println("Digite uma placa de carro que possua: \n" +
-                "7 caracteres no máximo;\n" +
-                "3 primeiros caracteres precisam ser letras;\n" +
-                "4 últimos caracteres precisam ser números.");
+        System.out.println("""
+                Digite uma placa de carro que possua:\s
+                7 caracteres no máximo;
+                3 primeiros caracteres precisam ser letras;
+                4 últimos caracteres precisam ser números.""");
         String entrada = in.nextLine();
 
         if (!validaEntrada(entrada)) {
